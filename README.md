@@ -24,7 +24,7 @@ sudo apt-get install -y vim cmake wget git tar unzip build-essential clang llvm 
 
 2. Clone the repository
 ```bash
-git clone --recursive https://gitlab.com/inventecaicenter/robot-dog-animation.git
+git clone --recursive https://github.com/inventec-ai-center/carl-siggraph2020.git
 ```
 
 3. Install [Eigen](http://eigen.tuxfamily.org/index.php) (version: 3.3.7)
@@ -89,6 +89,7 @@ pip install -r requirements.txt
 
 9. Compile CarlCore
 ``` bash
+cd {CARL_REPO}/CARL/CarlCore # {CARL_REPO} is the path where the CARL repository is located
 make python -j8
 ```
 
@@ -177,11 +178,12 @@ We provided a jupyter notebook file `plot_action_dist.ipynb` and a python script
 ``` python
 # generate real samples drawn from real distribution
 python mpi_run.py --arg_file args/generate_dog3d_gan_control_adapter_samples_speed_control_args.txt --num_workers 8
+
 # save action distribution image
-python plot_action_dst.py
+python plot_action_dist.py
 ```
 
-Note: You'll need to install python packages `jupyter` before using jupyter notebook file `plot_action_dist.ipynb`.
+Note: You'll need to install python package `jupyter` before using the jupyter notebook file `plot_action_dist.ipynb`.
 
 
 # Interface
