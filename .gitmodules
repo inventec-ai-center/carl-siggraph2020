@@ -1,0 +1,3 @@
+[submodule "DeepMimic"]
+	path = DeepMimic
+	url = https://github.com/xbpeng/DeepMimic

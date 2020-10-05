@@ -1,0 +1,30 @@
+--scene task_imitate
+
+--num_update_substeps 10
+--num_sim_substeps 2
+--world_scale 4
+
+--terrain_file data/terrain/plane.txt
+
+--cam_position 0.135827, 1.649429, -8.645550
+--cam_up -0.002943 0.982287 0.187358
+--cam_zoom 1.0
+
+--char_types general
+--character_files data/characters/dog3d.txt
+--enable_char_soft_contact false
+--enable_char_contact_fall true
+--fall_contact_bodies 0 1 2 3 4 5 6 7 11 12 16 20
+--track_gait_pattern_joint_indices 10 15 19 23
+
+--char_ctrls ct_pd
+--char_ctrl_files data/controllers/dog3d_ctrl.txt
+--motion_file data/motions/dog3d_pace_trot_canter.txt
+--sync_char_root_pos true
+--sync_char_root_rot false
+#--enable_root_rot_fail false
+#--enable_rand_rot_reset true
+
+--agent_files data/agents/ct_agent_dog_imitation_learning_ppo.txt
+--train_agents false
+--model_files data/policies/dog3d/model_imitation_learning_speed_control.ckpt

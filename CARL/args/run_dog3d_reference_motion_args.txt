@@ -1,0 +1,9 @@
+--scene kin_char
+
+--cam_position 0.135827, 1.649429, -8.645550
+--cam_up -0.002943 0.982287 0.187358
+--cam_zoom 1.0
+
+--character_file data/characters/dog3d.txt
+--motion_file data/motions/dog3d_pace_trot_canter.txt
+#--motion_file data/motions/dog3d_turning.txt

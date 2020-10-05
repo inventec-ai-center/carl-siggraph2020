@@ -1,0 +1,229 @@
+{
+	"UpdateRate": 30,
+	"EnablePhaseInput": false,
+	"RecordWorldRootPos": false,
+	"RecordWorldRootRot": true,
+
+	"RightJoints": [11, 12, 13, 14, 15, 20, 21, 22, 23],
+	"LeftJoints": [6, 7, 8, 9, 10, 16, 17, 18, 19],
+
+	"PDControllers":  
+	[
+		{
+			"ID": 0,
+			"Name": "Hips",
+			"Kp": 0,
+			"Kd": 0,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 1,
+			"Name": "Spine",
+			"Kp": 1000,
+			"Kd": 100,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 2,
+			"Name": "Spine1",
+			"Kp": 800,
+			"Kd": 80,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 3,
+			"Name": "Neck",
+			"Kp": 100,
+			"Kd": 10,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 4,
+			"Name": "Head",
+			"Kp": 50,
+			"Kd": 5,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 5,
+			"Name": "Head_end",
+			"Kp": 0,
+			"Kd": 0,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 6,
+			"Name": "LeftShoulder",
+			"Kp": 50,
+			"Kd": 5,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 7,
+			"Name": "LeftArm",
+			"Kp": 400,
+			"Kd": 40,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 8,
+			"Name": "LeftForeArm",
+			"Kp": 300,
+			"Kd": 30,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 9,
+			"Name": "LeftHand",
+			"Kp": 200,
+			"Kd": 20,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 10,
+			"Name": "LeftHand_end",
+			"Kp": 0,
+			"Kd": 0,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 11,
+			"Name": "RightShoulder",
+			"Kp": 50,
+			"Kd": 5,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 12,
+			"Name": "RightArm",
+			"Kp": 400,
+			"Kd": 40,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 13,
+			"Name": "RightForeArm",
+			"Kp": 300,
+			"Kd": 30,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 14,
+			"Name": "RightHand",
+			"Kp": 200,
+			"Kd": 20,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 15,
+			"Name": "RightHand_end",
+			"Kp": 0,
+			"Kd": 0,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 16,
+			"Name": "LeftUpLeg",
+			"Kp": 600,
+			"Kd": 60,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 17,
+			"Name": "LeftLeg",
+			"Kp": 500,
+			"Kd": 50,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 18,
+			"Name": "LeftFoot",
+			"Kp": 400,
+			"Kd": 40,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 19,
+			"Name": "LeftFoot_end",
+			"Kp": 0,
+			"Kd": 0,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 20,
+			"Name": "RightUpLeg",
+			"Kp": 600,
+			"Kd": 60,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 21,
+			"Name": "RightLeg",
+			"Kp": 500,
+			"Kd": 50,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 22,
+			"Name": "RightFoot",
+			"Kp": 400,
+			"Kd": 40,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 23,
+			"Name": "RightFoot_end",
+			"Kp": 0,
+			"Kd": 0,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 24,
+			"Name": "Tail",
+			"Kp": 100,
+			"Kd": 10,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 25,
+			"Name": "Tail1",
+			"Kp": 100,
+			"Kd": 10,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		},
+		{
+			"ID": 26,
+			"Name": "Tail1_end",
+			"Kp": 0,
+			"Kd": 0,
+			"TargetTheta0": 0,
+			"UseWorldCoord": 0
+		}
+	]
+}

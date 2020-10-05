@@ -1,0 +1,23 @@
+{
+    "LearningRate": 2e-3,
+    "Epochs": 100,
+    "BatchSize": 1024,
+    "ValidationRatio": 0.05,
+
+    "GeneratorNet": "fc_3layers_512units_branch_inputs",
+    "GeneratorValueLossFactor": 100,
+
+    "DiscriminatorNet": "fc_2layers_16units",
+    "DiscriminatorValueLossFactor": 1,
+
+    "NormalizerModelFile": "data/policies/dog3d/model_imitation_learning_heading_control.ckpt",
+
+    "StatesFile": "output/dog3d_gan_control_adapter_heading_control/states.npy",
+    "GoalsFile": "output/dog3d_gan_control_adapter_heading_control/goals.npy",
+    "WeightsFile": "output/dog3d_gan_control_adapter_heading_control/weights.npy",
+
+    "OutputPath": "output/dog3d_gan_control_adapter_heading_control",
+    "OutputIters": 10,
+    "IntOutputPath": "output/dog3d_gan_control_adapter_heading_control",
+    "IntOutputIters": 10
+}
