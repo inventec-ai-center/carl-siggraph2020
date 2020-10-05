@@ -59,7 +59,7 @@ wget https://download.open-mpi.org/release/open-mpi/v1.10/openmpi-1.10.7.tar.gz
 gunzip -c openmpi-1.10.7.tar.gz | tar xf -
 cd openmpi-1.10.7
 ./configure --prefix=/usr/local
-sudo make all install
+sudo make all install -j8
 ldconfig
 ```
 
