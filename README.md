@@ -29,7 +29,7 @@ git clone --recursive https://github.com/inventec-ai-center/carl-siggraph2020.gi
 
 3. Install [Eigen](http://eigen.tuxfamily.org/index.php) (version: 3.3.7)
 ``` bash
-cd /
+cd ~
 wget https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.tar.bz2
 tar -xf eigen-3.3.7.tar.bz2
 cd eigen-3.3.7
@@ -41,7 +41,7 @@ sudo make install
 
 4. Install [Bullet](https://github.com/bulletphysics/bullet3) (version: 2.88)
 ``` bash
-cd /
+cd ~
 wget https://github.com/bulletphysics/bullet3/archive/2.88.zip
 unzip 2.88.zip
 cd bullet3-2.88/
@@ -54,7 +54,7 @@ sudo make install
 
 5. Install [Open MPI](https://www.open-mpi.org/) (version: 1.10.7)
 ``` bash
-cd /
+cd ~
 wget https://download.open-mpi.org/release/open-mpi/v1.10/openmpi-1.10.7.tar.gz
 gunzip -c openmpi-1.10.7.tar.gz | tar xf -
 cd openmpi-1.10.7
@@ -65,7 +65,7 @@ ldconfig
 
 6. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 ``` bash
-cd /
+cd ~
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod 777 Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
@@ -278,6 +278,9 @@ Q: Crash with message `"util/MathUtil.cpp:175: static tMatrix cMathUtil::RotateM
 
 A: You can adjust the equation `std::abs(axis.squaredNorm() - 1) < 0.0001` in file `DeepMimic/DeepMimicCore/util/MathUtil.cpp`, from value `0.0001` to `0.1`, and re-compile CarlCore.
 
+Q: Getting the error message `ImportError: libBulletDynamics.so.2.88: cannot open shared object file: No such file or directory` while running the codes.
+
+A: Check the `libBulletDynamics.so.2.88` is presented under `/usr/local/lib/` by running `ls -l /usr/local/lib/ | grep libBullet`, and then include it in the PATH by running `export LD_LIBRARY_PATH=/usr/local/lib/`.
 
 # Acknowledgement
 
