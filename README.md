@@ -280,7 +280,7 @@ A: You can adjust the equation `std::abs(axis.squaredNorm() - 1) < 0.0001` in fi
 
 Q: Getting the error message `ImportError: libBulletDynamics.so.2.88: cannot open shared object file: No such file or directory` while running the codes.
 
-A: Check the `libBulletDynamics.so.2.88` is presented under `/usr/local/lib/` by running `ls -l /usr/local/lib/ | grep libBullet`, and then include it in the PATH by running `export LD_LIBRARY_PATH=/usr/local/lib/`.
+A: Check `libBulletDynamics.so.2.88` is presented under `/usr/local/lib/` by running `ls -l /usr/local/lib/ | grep libBullet`, and then include it in the PATH by running `export LD_LIBRARY_PATH=/usr/local/lib/`.
 
 # Acknowledgement
 
