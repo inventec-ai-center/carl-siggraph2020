@@ -19,7 +19,7 @@ Paper: https://arxiv.org/abs/2005.03288
 1. Install dependencies
 ``` bash
 sudo apt-get update
-sudo apt-get install -y vim cmake wget git tar unzip build-essential clang llvm python-dev freeglut3-dev libglew-dev swig libopenmpi-dev python3-pip
+sudo apt-get install -y vim cmake wget git tar unzip build-essential clang llvm python-dev freeglut3-dev libglew-dev swig python3-pip
 ```
 
 2. Clone the repository
